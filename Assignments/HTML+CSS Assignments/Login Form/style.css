@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    background: url(/Assets/image.png);
+    background-size: cover;
+    font-family: "Josefin Sans", sans-serif;    
+}
+
+.maindiv{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 30px;
+    height: 400px;
+    width: 400px;
+    margin: 100px auto;
+    background-color: #ffffff;
+}
+
+#usermail{
+    margin-left: 20px;
+}
+
+#pass{
+    margin-left: 14px;
+    
+}
+
+#remember{
+    margin-top: 10px;
+}
+
+.eye{
+    margin-left: 100px;
+}
+
+
+.forget{
+    margin-left: 145px;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loginB{
+    height: 60px;
+    width: 400px;
+    font-size: large;
+    background-color: rgba(137, 43, 226, 0.687);
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+.loginB:hover{
+    background-color: blueviolet;
+}
+
+.loginB:active{
+    background-color: rgb(120, 12, 222);
+}
+
+a{
+    text-decoration: none;
+}
+
+.formfields{
+    padding-top: 30px;
+    
+    input{
+        border: none;
+        font-size: large;
+    }
+}
+
+.lock{
+    height: 20px;
+    width: 20px;
+
+}
+
+h6{
+    text-align: center;
+    font-size: medium;
+}
