@@ -1,0 +1,16 @@
+#maidiv{
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.subdiv{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+

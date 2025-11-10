@@ -1,0 +1,31 @@
+#btn{
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+
+    #a{
+        display: inline;
+    }
+    #b{
+        display: none;
+    }
+}
+
+#btn:hover{
+     #a{
+        display: none;
+    }
+    #b{
+        display: inline;
+    }
+}
+
+.d1,.d2,.s1,.s2{
+    border: 1px solid black;
+}
+
+.d1,.d2{
+    height: 500px;
+    width: 100px;
+}

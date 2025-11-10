@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.navcons{
+    display: flex;
+    div{
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

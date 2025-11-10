@@ -1,0 +1,123 @@
+h1 {
+  width: 250px;
+  border: 1px solid black;
+}
+
+h1:hover {
+  /* margin-left: 200px; */
+  width: 500px;
+  transition: width 5s;
+  /* background: orange; */
+}
+
+.outer {
+  width: 200px;
+
+  height: 25px;
+  border: 1px solid black;
+}
+
+.inner {
+  height: inherit;
+
+  width: 0px;
+  background-color: red;
+}
+
+.outer:hover {
+  .inner {
+    width: inherit;
+    background-color: blue;
+    transition: width 6s linear, background-color 6s linear;
+  }
+}
+
+.outer1 {
+  width: 200px;
+
+  height: 25px;
+  border: 1px solid black;
+}
+
+.inner1 {
+  height: inherit;
+
+  width: 0px;
+  background-color: red;
+}
+
+.outer1:hover {
+  .inner1 {
+   animation: tanishk 5s linear;
+  }
+}
+
+@keyframes tanishk {
+    0%{
+        width: 0%;
+        background-color: red;
+    }
+    
+    25%{
+        width: 25%;
+        background-color: yellow;
+    }
+    50%{
+        width: 50%;
+        background-color: blue;
+    }
+    100%{
+        width: 100%;
+        background-color: aqua;
+    }
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    animation: boxmove 5s linear infinite;
+}
+
+
+@keyframes boxmove {
+
+    0%{
+        /* position: absolute; */
+        top: 250px;
+        left: 0px;
+            background-color: blue;
+    }
+    
+    25%{
+        /* position: absolute; */
+        top: 250px;
+       left: 100px;
+           background-color: red;
+    }
+    50%{
+        /* position: absolute; */
+        left: 100px;
+        top: 400px;
+            background-color: purple;
+    }
+    75%{
+        /* position: absolute; */
+        top: 400px;
+        left: 0px;
+            background-color: aqua;
+    }
+    100%{
+        /* position: absolute; */
+top: 250px;
+left: 0px;
+    background-color: blue;
+    }
+
+
+
+}
+
