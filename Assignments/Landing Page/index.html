@@ -1,44 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="heading">Material Tailwind</div>
+      <div class="navcons">
+        <div>
+          <img src="./Assets/Screenshot 2025-11-10 175151.png" alt="pages" />
+          <p class="iconame">Page</p>
+        </div>
+        <div>
+          <img
+            src="./Assets/Screenshot 2025-11-10 175157.png"
+            alt="home"
+          /><span>Home</span>
+        </div>
+        <div>
+          <img
+            src="./Assets/Screenshot 2025-11-10 175207.png"
+            alt="docs"
+          /><span>Docs</span>
+        </div>
+      </div>
+      <div>
+        <span id="dign">SIGN IN</span>
+        <button>Blocks</button>
+      </div>
+    </nav>
     <div class="maindiv">
+      <section class="hero">
+        <div class="hero1">
+          <h1>Welcome to my Web Development Portfolio!</h1>
+          <div class="desc">
+            I am Tanishk Sarathe, a passionate web developer based in
+            India.Here, you'll get a glimpse of my journey in the world of web
+            development, where creativity meets functionality.
+          </div>
+          <h6>Your email</h6>
+          <div class="requireOffer">
+            <input type="email" placeholder="Enter your email" />
+            <button id="ro">REQUIRE OFFER</button>
+          </div>
+          <div class="terms">Read my <a href="#">Terms and Conditions</a></div>
+        </div>
+        <div class="hero2">
+          <img src="./Assets/image.png" alt="portfolio" />
+        </div>
+      </section>
 
-        <nav class="navbar">
+      <section class="clients">
+        <h4>My awesome clients</h4>
+        <div>
+          <img src="./Assets/logo-coinbase.svg" alt="coinbase" /><img
+            src="./Assets/logo-spotify.svg"
+            alt="spotify"
+          />
+          <img src="./Assets/logo-google.svg" alt="pintrest" /><img
+            src="./Assets/logo-pinterest.svg"
+            alt="google"
+          />
+          <img src="./Assets/logo-amazon.svg" alt="amazon" /><img
+            src="./Assets/logo-netflix.svg"
+            alt="netflix"
+          />
+        </div>
 
-            <div>Material Tailwind</div>
-            <div class="navcons">
+        <div class="skildown">
+          <h4 class="skil">My Skills</h4>
+          <h1>What I do</h1>
+          <p class="skdesc">
+I'm not just a developer; I'm a digital dreamweaver. Crafting immersive online experiences is not just a job but my calling. Discover below how I can help you.</p
+          >
+        </div>
+      </section>
 
-                <div><img src="./Assets/Screenshot 2025-11-10 175151.png" alt="pages"><span>Page</span></div>
-                <div><img src="./Assets/Screenshot 2025-11-10 175157.png" alt="home"><span>Home</span></div>
-                <div><img src="./Assets/Screenshot 2025-11-10 175207.png" alt="docs"><span>Docs</span></div>
+      <section class="cardsone">
+        <div class="card1">
+          <img src="./Assets/Screenshot 2025-11-10 175228.png" alt="card" />
+          <h3>Frontend Web Development</h3>
+          <p>
+            Creating beautiful and functional web experiences is my forte. Using
+            the latest technologies and best practices, I design and build
+            websites that captivate and engage users.
+          </p>
+        </div>
+        <div class="card1">
+          <img src="./Assets/Screenshot 2025-11-10 175238.png" alt="card" />
+          <h3>Frontend Web Development</h3>
+          <p>
+            Creating beautiful and functional web experiences is my forte. Using
+            the latest technologies and best practices, I design and build
+            websites that captivate and engage users.
+          </p>
+        </div>
+        <div class="card1">
+          <img src="./Assets/Screenshot 2025-11-10 175250.png" alt="card" />
+          <h3>Frontend Web Development</h3>
+          <p>
+            Creating beautiful and functional web experiences is my forte. Using
+            the latest technologies and best practices, I design and build
+            websites that captivate and engage users.
+          </p>
+        </div>
+        <div class="card1">
+          <img src="./Assets/Screenshot 2025-11-10 175302.png" alt="card" />
+          <h3>Frontend Web Development</h3>
+          <p>
+            Creating beautiful and functional web experiences is my forte. Using
+            the latest technologies and best practices, I design and build
+            websites that captivate and engage users.
+          </p>
+        </div>
+        <div class="card1">
+          <img
+            id="eye"
+            src="./Assets/Screenshot 2025-11-10 175309.png"
+            alt="card"
+          />
+          <h3>Frontend Web Development</h3>
+          <p>
+            Creating beautiful and functional web experiences is my forte. Using
+            the latest technologies and best practices, I design and build
+            websites that captivate and engage users.
+          </p>
+        </div>
+        <div class="card1">
+          <img src="./Assets/Screenshot 2025-11-10 175317.png" alt="card" />
+          <h3>Frontend Web Development</h3>
+          <p>
+            Creating beautiful and functional web experiences is my forte. Using
+            the latest technologies and best practices, I design and build
+            websites that captivate and engage users.
+          </p>
+        </div>
+      </section>
+      <section class="projects">
+        <h1>My Projects</h1>
+        <p class="prodesc">
+          Whether you have a mobile app idea that needs to come to life or a
+          website that requires a facelift, I'm here to turn your digital dreams
+          into reality.
+        </p>
 
+        <div class="projectone">
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog-1.svg" alt="blog" />
             </div>
-            <div>
-
-                <span>SIGN IN</span>
-                <button>Blocks</button>
-
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog2.svg" alt="blog" />
             </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog3.svg" alt="blog" />
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog4.svg" alt="blog" />
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog3.svg" alt="blog" />
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog-1.svg" alt="blog" />
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog4.svg" alt="blog" />
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+          <div class="project1">
+            <div class="box">
+              <img src="./Assets/blog2.svg" alt="blog" />
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Mobile app designed to help users discover and explore local
+              restaurants and cuisines.
+            </p>
+            <button>SEE DETAILS</button>
+          </div>
+        </div>
+      </section>
 
-        </nav>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+      <section class="resume">
+        <div class="resume1">
+          <div class="resume1head">My Resume</div>
+          <div class="resume1desc">
+            Highly skilled and creative Web Developer with 5+ years of
+            experience in crafting visually stunning and functionally robust
+            websites and web applications.
+          </div>
+          <div class="view">View More <span>&rarr;</span></div>
+        </div>
+        <div class="resume2">
+          <div class="resume2inner">
+            <img src="./Assets/Screenshot 2025-11-10 175355.png" alt="" />
+            <p>Bachelor of Science in Computer Science</p>
+          </div>
+          <div class="resume2inner">
+            <img
+              id="puzzle"
+              src="./Assets/Screenshot 2025-11-10 175403.png"
+              alt=""
+            />
+            <p>Certified Web Developer</p>
+          </div>
+
+          <div class="resume2inner">
+            <img
+              id="click"
+              src="./Assets/Screenshot 2025-11-10 175408.png"
+              alt=""
+            />
+            <p>Frontend Framework Proficiency Certification</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="clientsay">
+        <h1>What Clients Say</h1>
+        <p>
+          Discover what clients have to say about their experiences working with
+          me. My client's satisfaction is my greatest achievement!
+        </p>
+      </section>
+
+      <section class="staffcard">
+        <div class="sc1">
+          <pre>
+Mobile App 
+Development</pre
+          >
+          <p>
+            I had the pleasure of working with Lily on a critical web
+            development project, and I can confidently say that their expertise
+            and professionalism exceeded my expectations.
+          </p>
+          <h4>Tanishk - Technical Manager</h3>
+          <h5>Marketing @ APPLE INC.</h4>
+
+          <div>
+            <img src="./Assets/image.png" alt="" class="mini"/>
+            <span>|</span>
+            <img src="./Assets/image.png" alt="" class="mini"/><span
+              >|</span
+            >
+            <img src="./Assets/image.png" alt="" class="mini"/>
+          </div>
+        </div>
+        <div class="sc2">
+          <img src="./Assets/image.png" alt="" class="minor"/>
+        </div>
+      </section>
+
+      <section class="seven">
+
+        <h4>POPULAR CLIENTS</h4>
+
+        <h1>Trusted by over 10,000+ clients</h1>
+        
+        <div class="gc">
+          <img src="./Assets/logo-coinbase.svg" alt="coinbase" /><img
+            src="./Assets/logo-spotify.svg"
+            alt="spotify"
+          />
+          <img src="./Assets/logo-google.svg" alt="pintrest" /><img
+            src="./Assets/logo-pinterest.svg"
+            alt="google"
+          />
+          <img src="./Assets/logo-amazon.svg" alt="amazon" /><img
+            src="./Assets/logo-netflix.svg"
+            alt="netflix"
+          />
+        </div>
+        
+
+      </section>
+
+      <section class="eight">
+
+        <h1>Contact Us</h1>
+        <p>Ready to get started? Feel free to reach out through the contact form, and let's embark on a journey of innovation and success.</p>
+
+      </section>
+
+      <section>
 
 
+
+      </section>
+
+      <footer>
+        <div class="f1">© 2025 Made with Material Tailwind by Creative Tim. Distributed by ThemeWagon</div>
+        <div class="f2">
+
+            <div>Home</div>
+            <div>About</div>
+            <div>Blog</div>
+            <div>Service</div>
+
+            <button>SUBSCRIBE</button>
+
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
