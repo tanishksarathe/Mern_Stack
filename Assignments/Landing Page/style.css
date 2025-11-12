@@ -394,6 +394,8 @@ a {
   p {
     color: var(--text);
     font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
   }
 }
 
