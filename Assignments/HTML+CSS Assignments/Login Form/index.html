@@ -8,35 +8,80 @@
 </head>
 <body>
 
-    <div class="maindiv">
+    <div class="ma">
+
+        <div class="maindiv">
 
         <h1 class="heading">Login</h1>
 
         <div class="formfields">
 
-            <span>&#9993;</span><input type="text" name="usermail" id="usermail" placeholder="Enter your email">
+            <span>&#9993;</span><input type="text" name="usermail" id="logusermail" placeholder="Enter your email">
 
             <hr>
 
             <br>
-            &nbsp;<span><img src="/Assets/image copy.png" alt="lock" class="lock"></span><input type="password" name="pass" id="pass" placeholder="Confirm a password"><span class="eye">&#128065;</span>
+            &nbsp;<span><img src="/Assets/image copy.png" alt="lock" class="lock"></span><input type="password" name="pass" id="logpass" placeholder="Confirm a password"><span class="eye">&#128065;</span>
 
             <hr>
 
         </div>
 
-        <span><input type="checkbox" name="remember" id="remember">Remember me</span><span class="forget"><a href="#">Forgot password?</a></span>
+        <span><input type="checkbox" name="remember" id="logremember">Remember me</span><span class="forget"><a href="#">Forgot password?</a></span>
         <br>
 
         <div class="buttons">
             
-        <button class="loginB">Login Now</button>
+        <button class="loginB" id="loginbutton" onclick="login()">Login Now</button>
 
         </div>
 
         <h6>Dont't have an account? <span><a href="/Assignments/HTML+CSS Assignments/Registration Form/index.html">Signup Now</a></span></h6>
 
     </div>
+
+     <div class="maindiv">
+        
+    <h1 class="heading">Registration</h1>
+
+    <div class="formfields">
+
+        &nbsp;<span><img src="/Assets/user.png" alt="person" class="lock"></span><input type="text" name="username" id="username" placeholder="Enter your name">
+        <hr>
+        <br>
+       &nbsp;<span>&#9993;</span><input type="text" name="usermail" id="usermail" placeholder="Enter your email">
+
+            <hr>
+<br>
+         <span><img src="/Assets/image copy.png" alt="lock" class="lock"><input type="text" name="pass" id="pass" placeholder="Create a password">
+        <hr>
+
+        <br>
+            <span><img src="/Assets/image copy.png" alt="lock" class="lock"></span><input type="password" name="pass" id="pass" placeholder="Confirm a password"><span class="eye">&#128065;</span>
+
+            <hr>
+
+            <br>
+
+             <span><input type="checkbox" name="remember" id="remember">I accept all terms & conditions</span>
+
+             <br>
+
+              <div class="buttons">
+            
+        <button class="loginB" id="registerButton" onclick="registration()">Register Now</button>
+
+        </div>
+
+        <h6>Already have an account? <span><a href="/Assignments/HTML+CSS Assignments/Login Form/index.html">Login Now</a></span></h6>
+
+    </div>
+
+    </div>
+
+    </div>
+
+        <script src="script.js"></script>
 
 </body>
 </html>
