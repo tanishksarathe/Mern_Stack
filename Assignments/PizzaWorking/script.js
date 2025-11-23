@@ -1,15 +1,15 @@
 function done(){
 
-    const username = document.getElementById("username");
-    const mail = document.getElementById("email");
-    const cn = document.getElementById("cn");
-    const qualification = document.getElementById("qual");
-    const school = document.getElementById("col");
-    const year = document.getElementById("year");
+    const username = document.getElementById("username").value;
+    const mail = document.getElementById("email").value;
+    const cn = document.getElementById("contact").value;
+    const qualification = document.getElementById("qual").value;
+    const school = document.getElementById("col").value;
+    const year = document.getElementById("year").value;
 
-    const branch = document.getElementById("branch");
+    const branch = document.getElementById("branch").value;
 
-    const source = document.getElementById("source");
+    const source = document.getElementById("source").value;
 
     console.log(username);
     console.log(mail);
@@ -22,7 +22,7 @@ function done(){
 
     alert("Form submitted successfully");
 
-    
+
 
 
 }
