@@ -153,8 +153,16 @@ function reset() {
     (rot = 0);
 
   applyFilter();
+  document.getElementById("Brightness").value="50";
+   document.getElementById("contrast").value="50";
+    document.getElementById("invert").value="0";
+    document.getElementById("rotate").value="0";
+    document.getElementById("saturate").value="50";
+    document.getElementById("blur").value="0";
+    document.getElementById("grayscale").value="0";
+    document.getElementById("sepia").value="0";
 
-    document.getElementById("image").style.filter = `brightness(${bright}) contrast(${cont}) invert(${inv}%) grayscale(${grays}%) sepia(${sep}%) blur(${bl}px) saturate(${satu}) hue-rotate(${rot}deg)`;
+
 
 
 }
