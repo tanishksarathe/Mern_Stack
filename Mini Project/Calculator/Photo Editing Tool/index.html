@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Editing Tool</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="container-fluid bg-primary text-center fs-1 fw-bold">
+      Photo Editor
+    </header>
+
+    <div
+      class="container-fluid d-flex px-5 py-2 justify-content-between gap-3 content"
+    >
+      <!-- image div -->
+      <div
+        class="border p-2 w-50 border-danger object-fit-contain d-flex justify-content-center align-items-center"
+        id="workspace"
+      >
+        <img src="" alt="workImage" id="image" />
+        <label class="btn btn-outline-primary" for="upload" id="uploadImage"
+          >Upload Image <i class="bi bi-camera2 text-dark"></i
+        ></label>
+        <input
+          type="file"
+          name="upload"
+          id="upload"
+          class="d-none"
+          onchange="uploadImage()"
+          accept="image/*"
+        />
+      </div>
+      <div
+        class="w-50 flex-wrap gap-2 border d-flex flex-column p-4 border-success"
+      >
+        <div class="border shadow p-2">
+          <label for="Brightness" class="fs-6">Brightness</label>
+          <input
+            type="range"
+            name="Brightness"
+            id="Brightness"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeBrightness()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+
+        <!-- co -->
+        <div class="border shadow p-2">
+          <label for="contrast" class="fs-6">Contrast</label>
+          <input
+            type="range"
+            name="contrast"
+            id="contrast"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeContrast()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+
+        <div class="border shadow p-2">
+          <label for="sepia" class="fs-6">Sepia</label>
+          <input
+            type="range"
+            name="sepia"
+            id="sepia"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeSepia()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+
+        <!-- GrayScale -->
+
+        <div class="border shadow p-2">
+          <label for="Brightness" class="fs-6">GrayScale</label>
+          <input
+            type="range"
+            name="grayscale"
+            id="grayscale"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeGrayScale()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+        <!-- blur -->
+
+        <div class="border shadow p-2">
+          <label for="Brightness" class="fs-6">Blur</label>
+          <input
+            type="range"
+            name="blur"
+            id="blur"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeBlur()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+        <!-- sat -->
+        <div class="border shadow p-2">
+          <label for="Brightness" class="fs-6">Saturate</label>
+          <input
+            type="range"
+            name="saturate"
+            id="saturate"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeSaturate()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+
+        <!-- rotate -->
+        <div class="border shadow p-2">
+          <label for="Brightness" class="fs-6">Rotate</label>
+          <input
+            type="range"
+            name="rotate"
+            id="rotate"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeRotate()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+
+        <div class="border shadow p-2">
+          <label for="Brightness" class="fs-6">Invert</label>
+          <input
+            type="range"
+            name="invert"
+            id="invert"
+            min="0"
+            max="100"
+            value="50"
+            onchange="changeInvert()"
+            class="form-range"
+          />
+          <div class="d-flex justify-content-between">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex px-5 py-2 gap-3">
+        <label for="reset" class="btn btn-outline-danger" onclick="reset()"
+          >Reset</label
+        >
+        <label
+          for="download"
+          class="btn btn-outline-success"
+          id="download"
+          onclick="download()"
+          >Download</label
+        >
+        <label class="btn btn-outline-primary" for="upload" id="uploadImage"
+          >Upload Image <i class="bi bi-camera2 text-dark"></i
+        ></label>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

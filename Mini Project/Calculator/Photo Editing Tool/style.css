@@ -1,0 +1,14 @@
+.content{
+    height: 88vh;
+}
+
+#image{
+    max-width : 350px;
+    max-height: 350px;
+   
+}
+
+#workspace{
+    position: relative;
+
+}

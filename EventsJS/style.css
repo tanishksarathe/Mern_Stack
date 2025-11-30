@@ -1,0 +1,32 @@
+#bulb{
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid black;
+    padding: 50;
+    border-radius: 15rem;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+}
+.maindiv{
+ display: flex; 
+gap: 60px;
+}
+
+#smartBulb{
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid black;
+    padding: 50;
+    border-radius: 15rem;
+}
+
+.on{
+    background-color: yellow;
+}
+.off{
+    background-color: white;
+}
