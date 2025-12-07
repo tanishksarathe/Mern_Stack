@@ -35,3 +35,29 @@ else{
         document.getElementById("smartBulb").classList.remove("on");
 }
 }
+
+document.getElementById("violet").addEventListener('mouseenter', (e)=>{
+  fillColor('violet');
+});
+document.getElementById("indigo").addEventListener('mouseenter', (e)=>{
+  fillColor('indigo');
+});
+document.getElementById("blue").addEventListener('mouseenter', (e)=>{
+  fillColor('blue');
+});
+document.getElementById("green").addEventListener('mouseenter', (e)=>{
+  fillColor('green');
+});
+document.getElementById("yellow").addEventListener('mouseenter', (e)=>{
+  fillColor('yellow');
+});
+document.getElementById("orange").addEventListener('mouseenter', (e)=>{
+  fillColor('orange');
+});
+document.getElementById("red").addEventListener('mouseenter', (e)=>{
+  fillColor('red');
+});
+
+function fillColor(color){
+  document.getElementById("bulbhover").style.backgroundColor=color;
+}

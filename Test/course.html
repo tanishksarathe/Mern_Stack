@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+       <nav
+      class="d-flex justify-content-around bg-dark p-2 align-items-center border rounded-5 text-light fs-3 mx-5 my-2 fixed-top"
+    >
+    <a href="index.html">
+      <h1 class="text-danger myfont error">Error <span class="text-light">Classes</span></h1>
+    </a>
+
+      <div class="d-flex justify-content-center gap-5 align-items-center fs-5">
+        <a href="#homeset" id="home" class="text-light">Home</a>
+        <a href="#courseset"8 id="courses" class="text-light">Courses</a>
+        <a href="about.html" id="about" target="_blank" class="text-light">About</a>
+        <a href="contact.html" id="contact" class="text-light">Contact</a>
+      </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form class="d-flex flex-column w-50 justify-content-center align-items-center gap-2 border shadow p-3 form-control">
+      <h1>Course Registration</h1>
+
+      <div class="d-flex flex-column gap-3">
+        <div>
+          <label for="username">Name :</label>
+          <input type="text" id="username" required/>
+        </div>
+
+        <div>
+          <label for="college">College :</label>
+          <input type="text" id="college" />
+        </div>
+
+        <div>
+          <label for="branch">Branch :</label>
+          <input type="text" id="branch" />
+        </div>
+
+        <div>
+          <label for="semester">Semester :</label>
+          <input type="number" id="semester" />
+        </div>
+
+        <div>
+          <label for="Phone">Phone Number :</label>
+          <input type="number" id="pnumber" />
+        </div>
+
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" id="email" />
+        </div>
+
+        <div>
+          <label for="gender">Gender :</label>
+          <input type="radio" id="gender" name="gender" value="male"/>&nbsp; Male
+          <input type="radio" name="gender" id="gender" value="female" />&nbsp; Female
+        </div>
+
+        <div>
+          <label for="coursename">Course Name:</label>
+          <select name="coursename" id="coursename" aria-placeholder="Select a Course">
+            <option value="">--Select--</option>
+            <option value="JavaDSA">Java DSA</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Full Stack Development">
+              Full Stack Development
+            </option>
+          </select>
+        </div>
+
+        <button class="btn btn-dark w-50" onclick="courseReg()" id="enrolls">Enroll</button>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

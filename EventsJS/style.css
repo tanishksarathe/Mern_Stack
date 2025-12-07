@@ -5,6 +5,23 @@
     padding: 50;
     border-radius: 15rem;
 }
+#bulbhover{
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid black;
+    padding: 50;
+    border-radius: 15rem;
+}
+.minibulb{
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid black;
+    padding: 50;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 button{
     height: 50px;
@@ -13,6 +30,7 @@ button{
 }
 .maindiv{
  display: flex; 
+ flex-direction: column;
 gap: 60px;
 }
 
@@ -29,4 +47,17 @@ gap: 60px;
 }
 .off{
     background-color: white;
+}
+
+#violet{
+    background-color: violet;
+}
+#indigo{
+    background-color: indigo;
+}
+#yellow{
+    background-color: yellow;
+}
+#orange{
+    background-color: orange;
 }
