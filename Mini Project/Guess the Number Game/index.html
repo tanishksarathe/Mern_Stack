@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body{
+        background: url('/Mini Project/Guess the Number Game/assets/image.png');
+        
+        object-fit: cover;
+
+      }
+    </style>
+  </head>
+  <body class="bg-primary d-flex flex-column justify-content-center align-items-center p-3">
+
+    <header class=" fw-bolder fs-1 d-flex p-3 justify-content-center bg-light w-50 border rounded-5">
+        Guess the Number
+    </header>
+
+    <div class="d-flex flex-column justify-content-center align-items-center bg-light w-75 mt-4 p-4 border rounded-5">
+
+        <p class="fs-4 fw-bold">We have selected a random number between 1 - 10. See if you can guess it?</p>
+        <label for="gussed" class="fs-3 fw-bold mb-3">Enter your guess</label>
+        <input type="number" name="guessed" id="guessed" class="form-control w-25 border-black">
+
+
+
+        <span class="d-flex justify-content-center align-items-center fw-bold p-3 fs-2" id="ans"></span>
+        
+        <div class="d-flex gap-5 p-3">
+            <button class="btn btn-outline-primary" onclick="check()">Check</button>
+            <button class="btn btn-outline-danger" onclick="restart()">Restart</button>
+        </div>
+
+        <p class="fw-bold" id="chances">You have 5 guesses. All the Best</p>
+
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
