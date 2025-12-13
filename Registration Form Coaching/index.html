@@ -44,49 +44,73 @@
             <label for="fullname" class="form-label w-25"
               >Full Name <sup class="text-danger">*</sup> :</label
             >
-            <input
-              type="text"
-              class="form-control"
-              id="fullname"
-              name="fullname"
-              required
-            />
+            <div class="d-flex flex-column w-100">
+              <input
+                type="text"
+                class="form-control"
+                id="fullname"
+                name="fullname"
+                required
+              />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="namevali"
+              ></div>
+            </div>
           </div>
           <div class="d-flex align-items-center">
             <label for="email" class="form-label w-25"
               >Email Address <sup class="text-danger">*</sup> :</label
             >
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              required
-            />
+            <div class="d-flex flex-column w-100">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="emailvali"
+              ></div>
+            </div>
           </div>
           <div class="d-flex align-items-center">
             <label for="mobile" class="form-label w-25"
               >Mobile Number <sup class="text-danger">*</sup> :</label
             >
-            <input
-              type="number"
-              class="form-control"
-              id="mobile"
-              name="mobile"
-              required
-            />
+            <div class="d-flex flex-column w-100">
+              <input
+                type="number"
+                class="form-control"
+                id="mobile"
+                name="mobile"
+                required
+              />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="phonevali"
+              ></div>
+            </div>
           </div>
           <div class="d-flex align-items-center">
             <label for="dob" class="form-label w-25"
               >Date of Birth <sup class="text-danger">*</sup> :</label
             >
-            <input
-              type="date"
-              class="form-control"
-              id="dob"
-              name="dob"
-              required
-            />
+            <div class="d-flex flex-column w-100">
+              <input
+                type="date"
+                class="form-control"
+                id="dob"
+                name="dob"
+                required
+              />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="dobvali"
+              ></div>
+            </div>
           </div>
         </div>
         <br />
@@ -102,7 +126,8 @@
             <label for="qual" class="form-label w-25"
               >Qualifications <sup class="text-danger">*</sup> :</label
             >
-            <select name="qual" id="qual">
+            <div class="d-flex flex-column w-100">
+              <select name="qual" id="qual" class="form-select">
               <option value="">--Select Qualification</option>
               <option value="secondary">Secondary Schooling</option>
               <option value="senior secondary">Senior Secondary</option>
@@ -110,18 +135,29 @@
               <option value="postgraduation">Post Graduation</option>
               <option value="phd">P.hd</option>
             </select>
+            <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="qualvali"
+              ></div>
+            </div>
           </div>
           <div class="d-flex align-items-center">
             <label for="grade" class="form-label w-25"
               >Percentage/Grade <sup class="text-danger">*</sup>:</label
             >
-            <input
+            <div class="d-flex flex-column w-100">
+              <input
               type="text"
               class="form-control"
               id="grade"
               name="grade"
               required
             />
+            <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="gradevali"
+              >Remaining</div>
+            </div>
           </div>
         </div>
         <br />
@@ -137,7 +173,8 @@
             <label for="course" class="form-label w-25"
               >Available Courses <sup class="text-danger">*</sup> :</label
             >
-            <select name="course" id="course">
+          <div class="w-100 d-flex flex-column">
+              <select name="course" id="course" class="form-select">
               <option value="">--Select Course</option>
               <option value="Full Stack Web Development">
                 Full Stack Web Development
@@ -149,6 +186,11 @@
               <option value="Java + DSA">Java + DSA</option>
               <option value="Robotics">Robotics</option>
             </select>
+            <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="coursevali"
+              ></div>
+          </div>
           </div>
           <div class="d-flex align-items-center">
             <label for="batch" class="form-label w-25"
@@ -195,6 +237,10 @@
                 />
                 <span>Weekends</span>
               </div>
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="daysvali"
+              ></div>
             </div>
           </div>
         </div>
@@ -212,28 +258,40 @@
             <label for="adr" class="form-label w-25"
               >Address <sup class="text-danger">*</sup> :</label
             >
-            <div>
-              <textarea name="adr" id="adr"></textarea>
+            <div class="d-flex">
+              <textarea name="adr" class="form-control" id="adr"></textarea>
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="addvali"
+              ></div>
             </div>
           </div>
           <div class="d-flex">
             <label for="city" class="form-label w-25"
               >City <sup class="text-danger">*</sup> :</label
             >
-            <div>
-              <input type="text" name="city" id="city">
+            <div class="d-flex">
+              <input type="text" class="form-control" name="city" id="city" />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="cityvali"
+              ></div>
             </div>
           </div>
           <div class="d-flex">
             <label for="pin" class="form-label w-25"
               >Pin Code <sup class="text-danger">*</sup> :</label
             >
-            <div>
-              <input type="number" name="pin" id="pin">
+            <div class="d-flex">
+              <input type="number" class="form-control" name="pin" id="pin" />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="pinvali"
+              ></div>
             </div>
           </div>
         </div>
-        <br>
+        <br />
         <div
           class="border rounded border-dark p-3 pt-4 position-relative d-flex flex-column gap-3"
         >
@@ -247,21 +305,30 @@
             <label for="guardian" class="form-label w-25"
               >Guardian's Full Name <sup class="text-danger">*</sup> :</label
             >
-            <div>
-              <input type="text" name="guardian" id="guardian">
+            <div class="d-flex flex-column w-100">
+              <input type="text" class="form-control" name="guardian" id="guardian" />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="gnamevali"
+              ></div>
             </div>
           </div>
-          
+
           <div class="d-flex">
             <label for="gcontact" class="form-label w-25"
-              >Guardian's Contact Number<sup class="text-danger">*</sup> :</label
+              >Guardian's Contact Number<sup class="text-danger">*</sup>
+              :</label
             >
             <div>
-              <input type="number" name="gcontact" id="gcontact">
+              <input type="number" class="form-control" name="gcontact" id="gcontact" />
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="gphonevali"
+              ></div>
             </div>
           </div>
         </div>
-        <br>
+        <br />
         <div
           class="border rounded border-dark p-3 pt-4 position-relative d-flex flex-column gap-3"
         >
@@ -271,11 +338,12 @@
           >
             Additional Details</span
           >
-           <div class="d-flex">
+          <div class="d-flex">
             <label for="hear" class="form-label w-25"
-              >Qualifications <sup class="text-danger">*</sup> :</label
+              >Source <sup class="text-danger">*</sup> :</label
             >
-            <select name="hear" id="hear">
+            <div class="w-100 d-flex flex-column">
+              <select name="hear" id="hear" class="form-select">
               <option value="">--Where did you hear about us....</option>
               <option value="Friends">Friends</option>
               <option value="Online ads">Online ads</option>
@@ -283,14 +351,23 @@
               <option value="NewsPaper">NewsPaper</option>
               <option value="Other">Other</option>
             </select>
+            <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="hearvali"
+              ></div>
+            </div>
           </div>
-          
+
           <div class="d-flex">
             <label for="special" class="form-label w-25"
               >Special Requirements<sup class="text-danger">*</sup> :</label
             >
-            <div>
-              <textarea name="special" id="special"></textarea>
+            <div class="d-flex">
+              <textarea name="special" class="form-control" id="special"></textarea>
+              <div
+                class="Error d-flex justify-content-end fs-6 text-danger"
+                id="specialvali"
+              ></div>
             </div>
           </div>
         </div>
