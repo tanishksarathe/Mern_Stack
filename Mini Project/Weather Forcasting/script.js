@@ -29,13 +29,13 @@ async function getweather() {
 
 async function getGeoLocation(city) {
   const locations = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`
+    `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=10&language=en&format=json`
   );
 
   const locationData = await locations.json();
 
-  const latitude = locationData[0].lat;
-  const longitude = locationData[0].lon;
+  const latitude = locationData.results[0].latitude;
+  const longitude = locationData.results[0].longitude;
 
   return { latitude, longitude }; // structuring objects
 }
