@@ -205,4 +205,19 @@ const objnum = (num1, num2) => ({
     number2 : num2
 })
 
-console.log(objnum(1,2));
+// console.log(objnum(1,2));
+
+const states = ["mp", "up", "pubjab", "laddakh", "kerela"]
+
+states.forEach(element => {
+    // console.log(element);
+});
+
+for (const key in states) {   
+    // console.log(states[key]);
+}
+
+
+for (const element of states) {
+    // console.log(element);
+}
