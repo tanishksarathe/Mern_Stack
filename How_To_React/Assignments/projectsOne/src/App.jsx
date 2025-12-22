@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className="flex flex-col gap-5">
-      {/* <SalaryCalculator /> */}
-      {/* <ElectricityBill /> */}
+      <SalaryCalculator />
+      <ElectricityBill />
       <TravelBill />
     </div>
   )

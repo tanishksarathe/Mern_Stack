@@ -1,4 +1,4 @@
-const key = "";
+const key = "b16eeefb7687b35f4f79b3c9057e71ca";
 
 async function getweather() {
   const city = document.getElementById("city").value;
@@ -10,19 +10,34 @@ async function getweather() {
 
   const data = await response.json();
 
-  document.getElementById("weatherData").innerHTML = `
-       <div>
-             <p>
-                Temperature : ${Math.floor(data.main.temp - 273.14)} ° C
-            </p>
-            <p>
-                Humidity : ${data.main.humidity}%            </p>
-            <p>
-                Description : ${data.weather[0].description}
-            </p>
-           </div>
+  console.log(data);
 
-            <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" alt="weatherIcon">
+  document.getElementById("weatherData").innerHTML = `
+           <div
+           class="d-flex p-2 flex-column justify-content-center text-light align-items-center"
+           >
+          <div class="d-flex justify-content-center align-items-center">
+             <p class="fs-1 fw-bold text-light"><i class="bi bi-thermometer-half"> ${Math.floor(
+             data.main.temp - 273.14
+           )}°C</i></p>
+           <img src="https://openweathermap.org/img/wn/${
+             data.weather[0].icon
+           }@4x.png" alt="weatherIcon">
+            <p class="fw-bold fs-3">${data.weather[0].main}</p>
+          </div>
+          <div class="d-flex mt-4 justify-content-between gap-5">
+            <p><i class="bi bi-moisture"> Humidity</i> : ${
+              data.main.humidity
+            }%</p>
+            <p>Description : ${data.weather[0].description}</p>
+          </div>
+          <div class="d-flex mt-1 justify-content-between gap-5">
+            <p><i class="bi bi-eyeglasses"> Visibility </i>: ${
+              data.visibility
+            }</p>
+            <p><i class="bi bi-wind">Wind Speed</i> : ${data.wind.speed}</p>
+          </div>
+        </div>
 
   `;
 }
@@ -33,6 +48,7 @@ async function getGeoLocation(city) {
   );
 
   const locationData = await locations.json();
+  console.log(locationData);
 
   const latitude = locationData.results[0].latitude;
   const longitude = locationData.results[0].longitude;
