@@ -10,8 +10,6 @@ async function getweather() {
 
   const data = await response.json();
 
-  console.log(data);
-
   document.getElementById("weatherData").innerHTML = `
            <div
            class="d-flex p-2 flex-column justify-content-center text-light align-items-center"
@@ -48,21 +46,9 @@ async function getGeoLocation(city) {
   );
 
   const locationData = await locations.json();
-  console.log(locationData);
 
   const latitude = locationData.results[0].latitude;
   const longitude = locationData.results[0].longitude;
 
   return { latitude, longitude }; // structuring objects
 }
-
-/*
-
-icon = 
-humdity = 
-description =
-temp = 
-name = 
-
-
-*/
