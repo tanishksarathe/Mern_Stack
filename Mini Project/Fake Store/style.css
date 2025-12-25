@@ -1,0 +1,20 @@
+a:hover{
+    color: orange !important
+}
+
+#home{
+    height: 100vh;
+}
+
+.card{
+    height: 600px;
+    width: 350px;
+}
+.cardtwo{
+    height: 300px;
+    width: 100%;
+}
+.images{
+    height: 200px;
+    width: 200px;
+}

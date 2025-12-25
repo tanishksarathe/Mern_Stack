@@ -1,4 +1,4 @@
-const key = "";
+const key = "b16eeefb7687b35f4f79b3c9057e71ca";
 
 async function getweather() {
   const city = document.getElementById("city").value;
