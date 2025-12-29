@@ -2,21 +2,13 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className='p-5'>
-            
-     <div className='flex'>
-         <div className='flex flex-col w-[50%]'>
-          <h1 className='text-6xl font-bold text-center'>Welcome to My Store</h1>
-         <div className='p-5 text-3xl'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio repudiandae aliquid rem unde consequatur aliquam ipsa nulla deleniti ullam, libero pariatur quas quia alias, tenetur itaque dolore repellendus voluptatibus vel.
-         </div>
-         </div>
-        <img src="src/assets/undraw_shopping_a55o.png" alt="image" className='h-100 w-150'/>
+    <div className=''>
+      <img src="src/assets/image copy.png" alt="image" className='h-100vh relative w-full z-0'/>
+     <section className='z-5 absolute top-50 p-5'>
+      <h1 className='text-7xl font-bold text-amber-950'>Glow Naturally <br />Feel Beautiful Everyday</h1>
+      <p className='w-150 text-2xl bg-white/40 p-5 rounded-2xl mt-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus amet sed ipsum natus quasi! Dolorem, neque repellat? Quasi facilis sequi accusantium animi nostrum laborum soluta quod quae quis sapiente fugit quo voluptate eligendi quia fuga quam, recusandae cumque eaque consequuntur!</p>
 
-     </div>
-
-     <section>
-      <h1></h1>
+      
      </section>
     </div>
   )

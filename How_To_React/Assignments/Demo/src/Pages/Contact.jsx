@@ -2,16 +2,33 @@ import React, { useState } from 'react'
 
 function Contact() {
 
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [details, setDetails] = useState({
+    fullName: "",
+    message: "",
+    email: "",
+  })
+
   const [loading, setLoading] = useState(false);
+
 
   const handleClearForm = () => {
     setFullName("");
     setEmail("");
     setMessage("");
   }
+
+  const handleChange = () => {
+
+    const {name, value} = e.target;
+
+    setDetails((prev) => (
+      {...prev, [name]: [value]}
+    ))
+
+
+  }
+
+  console.log(details);
 
   const handleSubmit = (e) => {
 
@@ -20,14 +37,14 @@ function Contact() {
 
     try {
 
-     
-        const data = {
-          name: fullName,
-          email: email,
-          message: message,
-        }
 
-        console.log(data);
+      const data = {
+        name: fullName,
+        email: email,
+        message: message,
+      }
+
+      console.log(data);
 
 
     } catch (error) {
@@ -47,11 +64,11 @@ function Contact() {
         <form action="" className='flex gap-3 flex-col' onSubmit={handleSubmit} onReset={handleClearForm}>
           <div className='flex'>
             <label htmlFor="fullName" className='mr-2'> Username :</label>
-            <input type="text" name='fullName' id='fullName' className='border rounded-2xl p-2 border-black' placeholder='Enter your Full Name' value={fullName} onChange={(e) => setFullName(e.target.value)} required/>
+            <input type="text" name='fullName' id='fullName' className='border rounded-2xl p-2 border-black' placeholder='Enter your Full Name' value={fullName} onChange={(e) => setFullName(e.target.value)} required />
           </div>
           <div className='flex'>
             <label htmlFor="email" className='mr-2'>Email :</label>
-            <input type="email" name='email' id='email' placeholder='Enter your Email' className='border rounded-2xl p-2 border-black' value={email} onChange={(e) => setEmail(e.target.value)} required/>
+            <input type="email" name='email' id='email' placeholder='Enter your Email' className='border rounded-2xl p-2 border-black' value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
           <div className='flex'>
             <label htmlFor="message" className='mr-2'>Message :</label>
