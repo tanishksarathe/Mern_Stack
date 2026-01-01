@@ -1,0 +1,236 @@
+[
+  {
+    "country_name": "Afghanistan",
+    "currency_name": "Afghan Afghani",
+    "currency_code": "AFN",
+    "country_code": "AF"
+  },
+  {
+    "country_name": "Albania",
+    "currency_name": "Albanian Lek",
+    "currency_code": "ALL",
+    "country_code": "AL"
+  },
+  {
+    "country_name": "Algeria",
+    "currency_name": "Algerian Dinar",
+    "currency_code": "DZD",
+    "country_code": "DZ"
+  },
+  {
+    "country_name": "Argentina",
+    "currency_name": "Argentine Peso",
+    "currency_code": "ARS",
+    "country_code": "AR"
+  },
+  {
+    "country_name": "Australia",
+    "currency_name": "Australian Dollar",
+    "currency_code": "AUD",
+    "country_code": "AU"
+  },
+  {
+    "country_name": "Austria",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "AT"
+  },
+  {
+    "country_name": "Bangladesh",
+    "currency_name": "Bangladeshi Taka",
+    "currency_code": "BDT",
+    "country_code": "BD"
+  },
+  {
+    "country_name": "Belgium",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "BE"
+  },
+  {
+    "country_name": "Brazil",
+    "currency_name": "Brazilian Real",
+    "currency_code": "BRL",
+    "country_code": "BR"
+  },
+  {
+    "country_name": "Canada",
+    "currency_name": "Canadian Dollar",
+    "currency_code": "CAD",
+    "country_code": "CA"
+  },
+  {
+    "country_name": "China",
+    "currency_name": "Chinese Yuan",
+    "currency_code": "CNY",
+    "country_code": "CN"
+  },
+  {
+    "country_name": "Denmark",
+    "currency_name": "Danish Krone",
+    "currency_code": "DKK",
+    "country_code": "DK"
+  },
+  {
+    "country_name": "Egypt",
+    "currency_name": "Egyptian Pound",
+    "currency_code": "EGP",
+    "country_code": "EG"
+  },
+  {
+    "country_name": "France",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "FR"
+  },
+  {
+    "country_name": "Germany",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "DE"
+  },
+  {
+    "country_name": "India",
+    "currency_name": "Indian Rupee",
+    "currency_code": "INR",
+    "country_code": "IN"
+  },
+  {
+    "country_name": "Indonesia",
+    "currency_name": "Indonesian Rupiah",
+    "currency_code": "IDR",
+    "country_code": "ID"
+  },
+  {
+    "country_name": "Ireland",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "IE"
+  },
+  {
+    "country_name": "Israel",
+    "currency_name": "Israeli New Shekel",
+    "currency_code": "ILS",
+    "country_code": "IL"
+  },
+  {
+    "country_name": "Italy",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "IT"
+  },
+  {
+    "country_name": "Japan",
+    "currency_name": "Japanese Yen",
+    "currency_code": "JPY",
+    "country_code": "JP"
+  },
+  {
+    "country_name": "Kenya",
+    "currency_name": "Kenyan Shilling",
+    "currency_code": "KES",
+    "country_code": "KE"
+  },
+  {
+    "country_name": "Mexico",
+    "currency_name": "Mexican Peso",
+    "currency_code": "MXN",
+    "country_code": "MX"
+  },
+  {
+    "country_name": "Netherlands",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "NL"
+  },
+  {
+    "country_name": "New Zealand",
+    "currency_name": "New Zealand Dollar",
+    "currency_code": "NZD",
+    "country_code": "NZ"
+  },
+  {
+    "country_name": "Nigeria",
+    "currency_name": "Nigerian Naira",
+    "currency_code": "NGN",
+    "country_code": "NG"
+  },
+  {
+    "country_name": "Norway",
+    "currency_name": "Norwegian Krone",
+    "currency_code": "NOK",
+    "country_code": "NO"
+  },
+  {
+    "country_name": "Pakistan",
+    "currency_name": "Pakistani Rupee",
+    "currency_code": "PKR",
+    "country_code": "PK"
+  },
+  {
+    "country_name": "Russia",
+    "currency_name": "Russian Ruble",
+    "currency_code": "RUB",
+    "country_code": "RU"
+  },
+  {
+    "country_name": "Saudi Arabia",
+    "currency_name": "Saudi Riyal",
+    "currency_code": "SAR",
+    "country_code": "SA"
+  },
+  {
+    "country_name": "Singapore",
+    "currency_name": "Singapore Dollar",
+    "currency_code": "SGD",
+    "country_code": "SG"
+  },
+  {
+    "country_name": "South Africa",
+    "currency_name": "South African Rand",
+    "currency_code": "ZAR",
+    "country_code": "ZA"
+  },
+  {
+    "country_name": "South Korea",
+    "currency_name": "South Korean Won",
+    "currency_code": "KRW",
+    "country_code": "KR"
+  },
+  {
+    "country_name": "Spain",
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "country_code": "ES"
+  },
+  {
+    "country_name": "Sweden",
+    "currency_name": "Swedish Krona",
+    "currency_code": "SEK",
+    "country_code": "SE"
+  },
+  {
+    "country_name": "Switzerland",
+    "currency_name": "Swiss Franc",
+    "currency_code": "CHF",
+    "country_code": "CH"
+  },
+  {
+    "country_name": "United Arab Emirates",
+    "currency_name": "UAE Dirham",
+    "currency_code": "AED",
+    "country_code": "AE"
+  },
+  {
+    "country_name": "United Kingdom",
+    "currency_name": "Pound Sterling",
+    "currency_code": "GBP",
+    "country_code": "GB"
+  },
+  {
+    "country_name": "United States",
+    "currency_name": "United States Dollar",
+    "currency_code": "USD",
+    "country_code": "US"
+  }
+]
