@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CountryData from "../assets/CountryData.json";
 import toast from "react-hot-toast";
-import axios from 'axios';
+import axios from "axios";
 
 const Currency = () => {
   const [to, setTo] = useState();
@@ -25,17 +25,23 @@ const Currency = () => {
 
       console.log(res.data);
 
-      setToAmt(fromAmt*res.data[from
-          .split(" ")[0]
-          .toLowerCase()][to
-          .split(" ")[0]
-          .toLowerCase()])
-
-
-
+      setToAmt(
+        fromAmt *
+          res.data[from.split(" ")[0].toLowerCase()][
+            to.split(" ")[0].toLowerCase()
+          ]
+      );
     } catch (error) {
       console.log(error.message);
     }
+  };
+
+  const swap = async() => {
+    
+    let temp = from;
+    setFrom(to);
+    setTo(temp);
+
   };
 
   return (
@@ -110,7 +116,7 @@ const Currency = () => {
             <input
               type="text"
               name="toAmt"
-              defaultValue={(toAmt)}
+              defaultValue={toAmt}
               className="border rounded-2xl p-2"
               placeholder="Required Answer"
             />
@@ -123,6 +129,12 @@ const Currency = () => {
             onClick={convert}
           >
             Convert
+          </button>
+          <button
+            className="border p-3 shadow rounded-2xl bg-blue-600 font-bold text-white"
+            onClick={swap}
+          >
+            Swap Currency
           </button>
         </div>
       </div>
