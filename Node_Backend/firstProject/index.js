@@ -18,6 +18,14 @@ app.get("/", (req, res) => {
   });
 });
 
+// Default error handler
+app.use((err,req,res,next) => {
+  const errorMessage = err.message || "Something went wrong";
+  const statusCode = err.statusCode || 500;
+
+  res.status(statusCode).json({message: errorMessage});
+})
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {

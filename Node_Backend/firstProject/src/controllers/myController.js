@@ -1,12 +1,21 @@
 import User from "../models/userMode.js";
 
-export const userRegistration = async (req, res) => {
+export const userRegistration = async (req, res, next) => {
   try {
     const { fullname, email, phone, password } = req.body;
 
     if (!fullname || !email || !phone || !password) {
-      res.status(400).json({ message: "All Fields Required" });
-      return;
+      const error = new Error("All Fields Required");
+      error.statusCode = 400;
+      return next(error);
+    }
+
+    const existingUser = await User.findOne({ email });
+
+    if (existingUser) {
+      const error = new Error("Email Already Exists");
+      error.statusCode = 409;
+      return next(error);
     }
 
     const newUser = await User.create({ fullname, email, phone, password });
@@ -17,36 +26,34 @@ export const userRegistration = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: "Internal Server Error" });
+    next(error);
   }
 };
 
-
-export const userLogin = async (req, res) => {
+export const userLogin = async (req, res, next) => {
   try {
     const { email, password } = req.body;
 
     if (!email || !password) {
-      res.status(400).json({ message: "All Fields Required" });
-      return;
+      const error = new Error("All Fields Required");
+      error.statusCode = 400;
+      return next(error);
     }
 
-    const existingUser = await User.find({ email });
+    const existingUser = await User.findOne({ email });
 
     if (!existingUser) {
-      res.status(404).json({
-        message: "User Not Found",
-      });
-      return;
+      const error = new Error("User Not Found");
+      error.statusCode = 404;
+      return next(error);
     }
 
     const isVerified = password === existingUser.password;
 
     if (!isVerified) {
-      res.status(401).json({
-        message: "User Unauthorized",
-      });
-      return;
+      const error = new Error("User Unauthorized");
+      error.statusCode = 401;
+      return next(error);
     }
 
     console.log(existingUser);
@@ -57,19 +64,50 @@ export const userLogin = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: "Internal Server Error" });
+    next(error);
   }
 };
 
-
-
-export const userLogOut = async (req, res) => {
+export const userLogOut = async (req, res, next) => {
   try {
     res.status(200).json({
       message: "Logout Successful",
     });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: "Internal Server Error" });
+    next(error);
+  }
+};
+
+export const userUpdate = async (req,res,next) => {
+  try {
+    const { fullname, email, phone } = req.body;
+
+    if (!fullname || !email || !phone) {
+      const error = new Error("All Fields Required");
+      error.statusCode = 400;
+      return next(error);
+    }
+
+    const existingUser = await User.findOne({ email });
+
+    if (!existingUser) {
+      const error = new Error("User Not Found");
+      error.statusCode = 404;
+      return next(error);
+    }
+
+    existingUser.fullname = fullname;
+    existingUser.phone = phone;
+
+    await existingUser.save();
+
+    res
+      .status(200)
+      .json({ message: "Data Updated Successfully", data: existingUser });
+
+  } catch (error) {
+    console.log(error);
+    next(error);
   }
 };
